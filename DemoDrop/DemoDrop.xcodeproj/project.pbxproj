@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1774EAE27FD96F1005805BA /* ExtractSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1774EAD27FD96F1005805BA /* ExtractSections.swift */; };
+		B1774EB027FD96FC005805BA /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1774EAF27FD96FC005805BA /* CustomSegmentedControl.swift */; };
 		B1E6498027FBA71A00A56341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E6497F27FBA71A00A56341 /* AppDelegate.swift */; };
 		B1E6498227FBA71A00A56341 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E6498127FBA71A00A56341 /* SceneDelegate.swift */; };
 		B1E6498427FBA71A00A56341 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E6498327FBA71A00A56341 /* ViewController.swift */; };
@@ -22,10 +24,12 @@
 		B1E649A527FBCCB900A56341 /* LimitBoxSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E649A427FBCCB900A56341 /* LimitBoxSectionView.swift */; };
 		B1E649AB27FC071300A56341 /* UIView+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E649AA27FC071300A56341 /* UIView+Extenions.swift */; };
 		B1E649AD27FC0A6E00A56341 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E649AC27FC0A6D00A56341 /* CGFloat+Extensions.swift */; };
-		B1E649B127FC0E6100A56341 /* ExtractSectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E649B027FC0E6100A56341 /* ExtractSectionCollectionView.swift */; };
+		B1E649B127FC0E6100A56341 /* ExtractSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E649B027FC0E6100A56341 /* ExtractSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1774EAD27FD96F1005805BA /* ExtractSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSections.swift; sourceTree = "<group>"; };
+		B1774EAF27FD96FC005805BA /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		B1E6497C27FBA71A00A56341 /* DemoDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E6497F27FBA71A00A56341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E6498127FBA71A00A56341 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +47,7 @@
 		B1E649A427FBCCB900A56341 /* LimitBoxSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitBoxSectionView.swift; sourceTree = "<group>"; };
 		B1E649AA27FC071300A56341 /* UIView+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenions.swift"; sourceTree = "<group>"; };
 		B1E649AC27FC0A6D00A56341 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
-		B1E649B027FC0E6100A56341 /* ExtractSectionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSectionCollectionView.swift; sourceTree = "<group>"; };
+		B1E649B027FC0E6100A56341 /* ExtractSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		B1E6497E27FBA71A00A56341 /* DemoDrop */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6498327FBA71A00A56341 /* ViewController.swift */,
 				B1E649AF27FC0E4900A56341 /* Sections */,
 				B1E649AE27FC0E3C00A56341 /* Extensions */,
 				B1E649A727FC048000A56341 /* Defaults */,
@@ -119,7 +124,6 @@
 			children = (
 				B1E6497F27FBA71A00A56341 /* AppDelegate.swift */,
 				B1E6498127FBA71A00A56341 /* SceneDelegate.swift */,
-				B1E6498327FBA71A00A56341 /* ViewController.swift */,
 				B1E6498527FBA71A00A56341 /* Main.storyboard */,
 				B1E6498827FBA71D00A56341 /* Assets.xcassets */,
 				B1E6498A27FBA71D00A56341 /* LaunchScreen.storyboard */,
@@ -140,7 +144,9 @@
 		B1E649AF27FC0E4900A56341 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				B1E649B027FC0E6100A56341 /* ExtractSectionCollectionView.swift */,
+				B1E649B027FC0E6100A56341 /* ExtractSectionView.swift */,
+				B1774EAD27FD96F1005805BA /* ExtractSections.swift */,
+				B1774EAF27FD96FC005805BA /* CustomSegmentedControl.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -219,14 +225,16 @@
 				B1E649A527FBCCB900A56341 /* LimitBoxSectionView.swift in Sources */,
 				B1E649AD27FC0A6E00A56341 /* CGFloat+Extensions.swift in Sources */,
 				B1E6499427FBC12600A56341 /* String+Extensions.swift in Sources */,
+				B1774EAE27FD96F1005805BA /* ExtractSections.swift in Sources */,
 				B1E649A327FBC78B00A56341 /* ExtractHeaderBoxView.swift in Sources */,
 				B1E649AB27FC071300A56341 /* UIView+Extenions.swift in Sources */,
 				B1E6499D27FBC5A700A56341 /* LimitBoxSectionViewData.swift in Sources */,
 				B1E6498427FBA71A00A56341 /* ViewController.swift in Sources */,
+				B1774EB027FD96FC005805BA /* CustomSegmentedControl.swift in Sources */,
 				B1E649A127FBC64300A56341 /* HeaderBoxSectionView.swift in Sources */,
 				B1E6498027FBA71A00A56341 /* AppDelegate.swift in Sources */,
 				B1E6499B27FBC57E00A56341 /* HeaderBoxSectionViewData.swift in Sources */,
-				B1E649B127FC0E6100A56341 /* ExtractSectionCollectionView.swift in Sources */,
+				B1E649B127FC0E6100A56341 /* ExtractSectionView.swift in Sources */,
 				B1E6499827FBC26D00A56341 /* ViewDataProtocols.swift in Sources */,
 				B1E6498227FBA71A00A56341 /* SceneDelegate.swift in Sources */,
 			);
