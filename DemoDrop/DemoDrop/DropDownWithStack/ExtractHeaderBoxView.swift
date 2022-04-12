@@ -85,6 +85,8 @@ final class ExtractHeaderBoxView : UIView {
                 bodyViews.append(limit)
             case .openBanking:
                 return
+            case .error:
+                <#code#>
             }
         }
     }
@@ -129,6 +131,8 @@ final class ExtractHeaderBoxView : UIView {
             item.update(isColapsed: isColapsed)
             item.text = isColapsed ? .empty : title
         }
+        
+        
     }
     
     private func changeState() {
@@ -142,7 +146,7 @@ final class ExtractHeaderBoxView : UIView {
     }
     
     enum BoxState { case expanded, colapsed }
-    enum BoxSectionType { case header, limit, openBanking }
+    enum BoxSectionType { case header, limit, openBanking, error }
 }
 
 //MARK: - HeaderBoxSectionViewDelegate
